@@ -109,7 +109,7 @@ if ( ! class_exists( 'Charitable' ) ) :
          * @var   Charitable_Endpoints|null
          */
         public $endpoints = null;
-  
+
         /**
          * Donation Fields.
          *
@@ -189,7 +189,7 @@ if ( ! class_exists( 'Charitable' ) ) :
             $includes_path = $this->get_path( 'includes' );
 
             /* Autoload Mapping */
-            require_once( $includes_path . 'charitable-autoloader.php' ); 
+            require_once( $includes_path . 'charitable-autoloader.php' );
 
             /* Core Functions */
             require_once( $includes_path . 'charitable-core-functions.php' );
@@ -205,18 +205,18 @@ if ( ! class_exists( 'Charitable' ) ) :
             require_once( $includes_path . 'deprecated/charitable-deprecated-functions.php' );
             require_once( $includes_path . 'deprecated/deprecated-class-charitable-templates.php' );
 
-            /* Donations */                
+            /* Donations */
             require_once( $includes_path . 'donations/charitable-donation-hooks.php' );
             require_once( $includes_path . 'donations/charitable-donation-functions.php' );
-            
-            /* Emails */            
+
+            /* Emails */
             require_once( $includes_path . 'emails/charitable-email-hooks.php' );
 
             /* Endpoints */
             require_once( $includes_path . 'endpoints/charitable-endpoints-functions.php' );
 
             /* Public */
-            require_once( $includes_path . 'public/charitable-template-helpers.php' );        
+            require_once( $includes_path . 'public/charitable-template-helpers.php' );
 
             /* Shortcodes */
             require_once( $includes_path . 'shortcodes/charitable-shortcodes-hooks.php' );
@@ -225,7 +225,7 @@ if ( ! class_exists( 'Charitable' ) ) :
 			require_once( $includes_path . 'users/charitable-user-functions.php' );
 
             /* User Management */
-            require_once( $includes_path . 'user-management/charitable-user-management-hooks.php' );            
+            require_once( $includes_path . 'user-management/charitable-user-management-hooks.php' );
 
             /* Utilities */
             require_once( $includes_path . 'utilities/charitable-utility-functions.php' );
@@ -445,8 +445,8 @@ if ( ! class_exists( 'Charitable' ) ) :
             $api->register( new Charitable_Email_Preview_Endpoint );
             $api->register( new Charitable_Email_Verification_Endpoint );
             $api->register( new Charitable_Registration_Endpoint );
-            $api->register( new Charitable_Forgot_Password_Endpoint );            
-            $api->register( new Charitable_Reset_Password_Endpoint );            
+            $api->register( new Charitable_Forgot_Password_Endpoint );
+            $api->register( new Charitable_Reset_Password_Endpoint );
             $api->register( new Charitable_Login_Endpoint );
             $api->register( new Charitable_Profile_Endpoint );
 
