@@ -403,7 +403,7 @@ if ( ! class_exists( 'Charitable_Campaign_Meta_Boxes' ) ) :
 					esc_url( add_query_arg( 'preview', 'true', get_permalink( $post_ID ) ) )
 				),
 				9 => sprintf(
-					__( 'Campaign scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview Campaign</a>', 'charitable' ), 
+					__( 'Campaign scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview Campaign</a>', 'charitable' ),
 					date_i18n( __( 'M j, Y @ G:i', 'charitable' ),strtotime( $post->post_date ) ),
 					esc_url( get_permalink( $post_ID ) )
 				),
