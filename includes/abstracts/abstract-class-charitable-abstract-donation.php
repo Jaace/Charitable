@@ -612,7 +612,7 @@ if ( ! class_exists( 'Charitable_Abstract_Donation' ) ) :
 		 *
 		 * @since  1.5.0
 		 *
-		 * @return string|boolean Whether to return 
+		 * @return string|boolean Whether to return
 		 */
 		public function get_test_mode( $text = true ) {
 			$test_mode = get_post_meta( $this->donation_id, 'test_mode', true );
@@ -626,7 +626,7 @@ if ( ! class_exists( 'Charitable_Abstract_Donation' ) ) :
 
 		/**
 		 * Return an array of meta relating to the donation.
-		 * 
+		 *
 		 * @since  1.2.0
 		 *
 		 * @return mixed[]
@@ -646,7 +646,7 @@ if ( ! class_exists( 'Charitable_Abstract_Donation' ) ) :
 			 * @param Charitable_Donation $donation This instance of `Charitable_Donation`.
 			 */
 			return apply_filters( 'charitable_donation_admin_meta', $meta, $this );
-		}		
+		}
 
 		/**
 		 * Checks whether the donation is from the current user.
@@ -675,7 +675,7 @@ if ( ! class_exists( 'Charitable_Abstract_Donation' ) ) :
 			}
 
 			return $donor->get_email() == $user->user_email;
-		}		
+		}
 
 		/**
 		 * Get a donation's log.
@@ -695,7 +695,7 @@ if ( ! class_exists( 'Charitable_Abstract_Donation' ) ) :
 				);
 			}
 
-			$log = get_post_meta( $this->donation_id, '_donation_log', true );;
+			$log = get_post_meta( $this->donation_id, '_donation_log', true );
 
 			return is_array( $log ) ? $log : array();
 		}
@@ -785,12 +785,12 @@ if ( ! class_exists( 'Charitable_Abstract_Donation' ) ) :
 		}
 
 		/**
-	     * Return the parent donation, if exists
-	     *
-	     * @since  1.4.5
-	     *
-	     * @return int
-	     */
+		 * Return the parent donation, if exists
+		 *
+		 * @since  1.4.5
+		 *
+		 * @return int
+		 */
 	    public function get_donation_plan_id() {
 	        return $this->donation_data->post_parent;
 	    }
@@ -974,7 +974,7 @@ if ( ! class_exists( 'Charitable_Abstract_Donation' ) ) :
 		 *
 		 * @param  mixed   $value
 		 * @param  string  $key
-		 * @return mixed		 
+		 * @return mixed
 		 */
 		public function sanitize_meta( $value, $key ) {
 			charitable_get_deprecated()->deprecated_function(
