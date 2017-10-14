@@ -71,7 +71,7 @@ if ( ! class_exists( 'Charitable_Post_Types' ) ) :
 			 *
 			 * To change any of the arguments used for the post type, other than the name
 			 * of the post type itself, use the 'charitable_campaign_post_type' filter.
-		 	*/
+			 */
 			register_post_type( 'campaign',
 				apply_filters( 'charitable_campaign_post_type',
 					array(
