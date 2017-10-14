@@ -192,7 +192,7 @@ if ( ! class_exists( 'Charitable_Admin_Pages' ) ) :
 		 * Display the Charitable donations page.
 		 *
 		 * @since   1.0.0
-         *
+		 *
 		 * @return  void
 		 *
 		 * @deprecated 1.4.0
