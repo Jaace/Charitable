@@ -34,7 +34,7 @@ if ( ! class_exists( 'Charitable_Donation_Metaboxes' ) ) :
 		private $meta_box_helper;
 
 		/**
-		 * Create object instance.		 
+		 * Create object instance.
 		 *
 		 * @since 1.5.0
 		 *
@@ -141,7 +141,7 @@ if ( ! class_exists( 'Charitable_Donation_Metaboxes' ) ) :
 		 */
 		public function get_form_meta_box() {
 			global $post;
-			
+
 			$form       = new Charitable_Admin_Donation_Form( charitable_get_donation( $post->ID ) );
 			$meta_boxes = array(
 				'donation-form' => array(
@@ -238,7 +238,7 @@ if ( ! class_exists( 'Charitable_Donation_Metaboxes' ) ) :
 
 			if ( array_key_exists( 'charitable_action', $_POST ) && ! did_action( 'charitable_before_save_donation' ) ) {
 				$form = new Charitable_Admin_Donation_Form( charitable_get_donation( $donation_id ) );
-				
+
 				if ( $form->validate_submission() ) {
 					$this->disable_automatic_emails();
 
