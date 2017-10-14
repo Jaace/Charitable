@@ -21,7 +21,7 @@ spl_autoload_register( 'charitable_autoloader' );
  * @param string $class_name The fully-qualified name of the class to load.
  */
 function charitable_autoloader( $class_name ) {
- 
+
     // If the specified $class_name already exists, bail.
     if ( class_exists( $class_name ) ) {
         return;
