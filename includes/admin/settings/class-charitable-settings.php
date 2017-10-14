@@ -548,13 +548,13 @@ if ( ! class_exists( 'Charitable_Settings' ) ) :
 		 * @deprecated 1.4.13
 		 */
 		public function get_update_messages() {
-			
+
 			charitable_get_deprecated()->deprecated_function(
 				__METHOD__,
 				'1.4.13',
 				'Charitable_Admin_Notices::get_notices()'
 			);
-			
+
 			return charitable_get_admin_notices()->get_notices();
 		}
 	}
