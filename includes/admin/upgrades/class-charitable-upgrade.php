@@ -262,7 +262,7 @@ if ( ! class_exists( 'Charitable_Upgrade' ) ) :
 				if ( isset( $upgrade_progress['page'] ) && 'charitable-upgrade' == $upgrade_progress['page'] ) {
 					$upgrade_progress['page'] = 'charitable-upgrades';
 				}
-?>		
+?>
 				<div class="error">
 					<p><?php printf( __( 'Charitable needs to complete an upgrade that was started earlier. Click <a href="%s">here</a> to continue the upgrade.', 'charitable' ), esc_url( add_query_arg( $upgrade_progress, admin_url( 'index.php' ) ) ) ) ?>
 					</p>
@@ -662,7 +662,7 @@ if ( ! class_exists( 'Charitable_Upgrade' ) ) :
 		}
 
 		/**
-		 * Remove the 'manage_charitable_settings' cap from the Campaign Manager role.		 
+		 * Remove the 'manage_charitable_settings' cap from the Campaign Manager role.
 		 *
 		 * @since  1.4.5
 		 *
